@@ -10,10 +10,9 @@ PROGRAM RPIM
     dimension x(nx,numnode),nv(numnode), gpos(nx),phi(10,numnode)
     open(2,file='phi.dat') ! Output file
     write(2,50)
-    !nRBF=1 ! Using MQ-RBF
-    nRBF=3
-    !q=0.5
-    q=4.001
+    nRBF=1 ! Using MQ-RBF
+
+    q=2.003
     alfc=0.03
     dc=0.5
     mbasis=0 ! Number of basis
