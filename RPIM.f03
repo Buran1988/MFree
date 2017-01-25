@@ -12,7 +12,7 @@ PROGRAM RPIM
     write(2,50)
     nRBF=1 ! Using MQ-RBF
 
-    q=2.003
+    q=2.03
     alfc=0.03
     dc=0.5
     mbasis=0 ! Number of basis
