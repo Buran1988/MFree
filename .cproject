@@ -38,9 +38,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="photran.managedbuild.config.gnu.fortran.win32.exe.debug.114535382.411687571" name="ComputeGamma.f03" rcbsApplicability="disable" resourcePath="ComputeGamma.f03" toolsToInvoke="photran.managedbuild.tool.gnu.fortran.compiler.win32.exe.debug.1811038552.36230278">
-						<tool id="photran.managedbuild.tool.gnu.fortran.compiler.win32.exe.debug.1811038552.36230278" name="GNU Fortran Compiler" superClass="photran.managedbuild.tool.gnu.fortran.compiler.win32.exe.debug.1811038552"/>
-					</fileInfo>
 					<sourceEntries>
 						<entry excluding="ComputeGamma.f03|MLS.f03" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
@@ -111,4 +108,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

@@ -29,25 +29,30 @@ SUBROUTINE Compute_AB(gpos,x,nv,ds,a,b,nx,numnode,ndex,mm)
 
     CALL Weight_W1(dif,nv,ds,w,nx,ndex,numnode)
     ! ************* Compute b and its derivatives
-    DO 20 ii=1,mm
-        DO 20 jj=1,ndex
-            DO 20 kk=1,10
+    DO ii=1,mm
+        DO jj=1,ndex
+            DO kk=1,10
                 b(ii,jj,kk)=p(ii,jj)*w(jj,kk)
-20          CONTINUE
+            enddo
+        enddo
+    enddo
             ! ************* Compute a and its derivatives
 
             a=0.
 
             DO 30 iii=1,ndex
-                DO 40 ik=1,mm
-                    DO 40 jk=1,mm
+                DO ik=1,mm
+                    DO jk=1,mm
                         pp(ik,jk)=p(ik,iii)*p(jk,iii)
-40                  CONTINUE
-                    DO 50 ikk=1,mm
-                        DO 50 jkk=1,mm
-                            DO 50 kkk=1,10
+                   end do
+                enddo
+                    DO  ikk=1,mm
+                        DO  jkk=1,mm
+                            DO  kkk=1,10
                                 a(ikk,jkk,kkk)=a(ikk,jkk,kkk)+w(iii,kkk)*pp(ikk,jkk)
-50                          CONTINUE
+                            end do
+                        end do
+                    end do
 30                      CONTINUE
                         RETURN
                     END
